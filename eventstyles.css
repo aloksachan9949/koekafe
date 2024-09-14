@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+nav {
+  animation: unset;
+  background-color: #1c0505;
+}
+
+.eventbg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  /* border: 2px solid orangered; */
+  /* background: url("./files/koebg.jpg"); */
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+  filter: brightness(0.5);
+}
+
+/* PAST events */
+.past {
+  margin-block: 10vh;
+  /* border: 2px solid rgb(54, 37, 37); */
+  /* position: relative; */
+  width: 100vw;
+  /* height: 20vh; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.past>h1 {
+  color: rgb(68, 47, 7);
+  writing-mode: vertical-lr;
+  /* background-color: #1c0505; */
+}
+
+.eventcard {
+  /* border: 2px solid orangered; */
+  /* border-left: 4px solid black; */
+  width: 80vw;
+  text-align: center;
+  background-color: #e4e4e4;
+}
+
+.eventtitle {
+  color: white;
+  background-color: rgb(34, 34, 34);
+  font-family: "Bodoni Moda", cursive;
+  padding-block: 0.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.subinfo {
+  background-color: #ffffffcc;
+}
+
+.subinfo>ul {
+  display: flex;
+  justify-content: space-around;
+  /* padding: 0; */
+  margin: 0;
+}
+
+.subinfo>ul>li {
+  list-style-type: none;
+  padding: 1rem;
+  font-weight: bold;
+  font-family: "smooch", cursive;
+  font-size: 1.5rem;
+}
+
+.timing {
+  background-color: #fff;
+  text-align: left;
+  padding: 0.5rem;
+  font-family: "cinzel", sans-serif;
+  font-weight: bold;
+}
+
+.contentheading {
+  font-family: "Tangerine", cursive;
+  font-size: 3rem;
+  font-weight: bold;
+
+}
+
+.artistlist {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2rem;
+  justify-content: space-around;
+}
+
+.artistinfo {
+  padding: 1rem;
+  list-style-type: none;
+  font-family: "Cinzel", cursive;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(14, 14, 54);
+  /* border: 2px solid red; */
+  border-radius: 20px;
+  width: 30vw;
+  box-shadow: -6px -6px 0 0 #aaa;
+  background-color: #eee;
+}
+
+.artistinfo>p {
+  font-family: sans-serif;
+  font-size: 1rem;
+  color: rgb(90, 41, 90);
+}
+
+
+/* UPCOMING */
+.upcoming {
+  background-color: #1a2c1c;
+  margin-block: 10vh;
+  /* border: 2px solid rgb(54, 37, 37); */
+  /* position: relative; */
+  width: 100vw;
+  /* height: 20vh; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.upcoming>h1 {
+  writing-mode: sideways-lr;
+  color: white
+}
+
+.upcoming .subinfo {
+  background-color: #bcd6bf;
+}
+
+.upcoming .timing {
+  background-color: #d0dfd2;
+
+}
+
+.upcoming .eventtitle {
+  background-color: #518154;
+}
+
+.upcoming .contentinfo {
+  background-color: #8ac58f;
+  padding: 1rem;
+}
+
+.upcoming .content {
+  border-radius: 30px;
+  background-color: rgb(216, 236, 217);
+  padding: 2rem;
+  width: 70%;
+  margin: auto auto;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.2rem;
+
+}
+
+@media only screen and (max-width: 820px) {
+  .fill {
+    height: 8vw;
+  }
+
+  .upcoming,
+  .past {
+    flex-direction: column;
+    padding-top: 2rem;
+
+  }
+
+  .upcoming>h1,
+  .past>h1 {
+    writing-mode: horizontal-tb;
+  }
+
+  .upcoming .content {
+    width: 95%;
+
+  }
+
+  .eventcard {
+    width: 95vw;
+  }
+
+  .artistinfo {
+    width: 90%;
+  }
+}

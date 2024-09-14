@@ -1,0 +1,60 @@
+:root {
+  --border-bottom-color: linear-gradient(rgb(120, 0, 0),
+      rgb(0, 0, 0),
+      rgb(200, 0, 0));
+}
+
+nav {
+  animation: unset;
+  background-color: #1c0505;
+}
+
+body {
+  /* background-image: url("./files/koe_data/img\ \(6\).jpeg"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  overflow-x: hidden;
+}
+
+.img-container img {
+  padding: 0px;
+  margin: 1rem;
+  width: 15vw;
+  border-radius: 10%;
+  transition: transform 1s;
+  box-shadow: 0 0 10px black;
+}
+
+.img-container img:hover {
+  transform: scale(1.1);
+}
+
+.gallery-heading {
+  font-family: "Tangerine", cursive;
+  font-size: 4em;
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 0;
+  margin-top: 5rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .img-container {
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .img-container img {
+    width: 80vw;
+    border-radius: 10px;
+    /* margin: 0 1rem; */
+  }
+}

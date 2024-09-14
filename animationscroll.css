@@ -1,0 +1,36 @@
+/* .specialCard img {
+  animation: anim1 linear forwards;
+  animation-timeline: view();
+  animation-range-start: entry;
+  animation-range-end: exit;
+} */
+/* video {
+  animation: anim2 linear forwards;
+  animation-timeline: scroll();
+  animation-range: exit;
+} */
+@keyframes anim1 {
+  0% {
+    scale: 0.5;
+    opacity: 0;
+  }
+  50% {
+    scale: 1;
+    opacity: 1;
+  }
+  100% {
+    scale: 0.5;
+    opacity: 0;
+  }
+}
+
+@keyframes anim2 {
+  from {
+    scale: 1;
+    opacity: 1;
+  }
+  to {
+    scale: 3;
+    opacity: 0;
+  }
+}

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Cinzel&family=Rock+Salt&family=Smooch&family=Tangerine:wght@700&family=WindSong&display=swap"
+    rel="stylesheet" />
+
+  <!-- BOOTSTRAP CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./header.css" />
+  <link rel="stylesheet" href="./animationscroll.css" />
+  <link rel="stylesheet" href="./scrollcontrol.css" />
+  <title>KOE - The Kafe</title>
+</head>
+
+<body>
+  <div class="bg">
+    <video id="introVid" autoplay loop muted plays-inline>
+      <source src="./files/cofe3.mp4" type="video/mp4" />
+    </video>
+  </div>
+  <!-- VIDEO START -->
+  <div class="vid-container small-screen">
+    <video id="introVid" autoplay loop muted plays-inline>
+      <source src="./files/introVide.mp4" type="video/mp4" />
+    </video>
+  </div>
+  <div class="vid-container big-screen">
+    <video id="introVid" autoplay loop muted plays-inline>
+      <source src="./files/coffe1.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+  <!-- VIDEO END -->
+
+  <!-- NAVIGATION START -->
+  <header>
+    <nav id="navigation" class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-toggler heading display-block" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation ">
+          <h1 class="text-start">KOE</h1>
+          <h6 class="text-start">The Kafe</h6>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item px-3">
+              <a class="nav-link text-center active" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link text-center" href="https://vcardpro.me/uploads/vcards/menu/KoeCafeFood.pdf"
+                target="_blank">Menu</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link text-center" href="./gallery.html" target="_blank">Gallery</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link text-center" href="./events.html">Events</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- NAVIGATION END -->
+
+  <div class="top-container">
+    <h2>Your</h2>
+    <h2>culinary</h2>
+    <h2>adventure</h2>
+    <h2>awaits.</h2>
+  </div>
+
+  <!-- section -->
+  <section class="speciality background">
+    <div>
+      <h2 class="head1">Our Specialities</h2>
+      <div class="horizontal-line"></div>
+    </div>
+    <div class="container">
+      <div class="blockContainer ">
+        <div class="imageCont">
+          <div class="subhead">Coffee</div>
+          <img src="./files/koe_data/img (12).jpeg" alt="img" />
+        </div>
+        <!-- <div class="textCont">
+        <p>
+          Indulge in a sensory journey as our baristas craft artisanal coffees
+          and delectable pastries
+        </p>
+      </div> -->
+      </div>
+
+
+      <div class="blockContainer ">
+        <div class="imageCont" id="breads">
+          <div class="subhead">Breads</div>
+          <img src="./files/koe_data/img (10).jpeg" alt="img" />
+        </div>
+
+        <!-- <div class="textCont">
+        <p>
+          Immerse yourself in the aromatic journey of our cafe, where in-house
+          coffee roasting adds a distinctive flavor to every cup.
+        </p>
+      </div> -->
+      </div>
+
+
+      <div class="blockContainer ">
+        <div class="imageCont" id="cheeses">
+          <div class="subhead">Cheeses</div>
+          <img src="./files/koe_data/img (3).jpeg" alt="img" />
+        </div>
+        <!-- <div class="textCont">
+        <p>
+          Embark on a culinary journey with our artisanal bread, meticulously
+          crafted to epitomize the synergy of simplicity and sophistication.
+        </p>
+      </div> -->
+      </div>
+    </div>
+
+    <div class="specialdetail" id="breadDisplay">
+      <svg id="closedialog1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+        class="bi bi-x" viewBox="0 0 16 16">
+        <path
+          d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+      </svg>
+      <!-- Breads we have -->
+      <div class="subtype">
+        <h3>Sourdough</h3>
+        <p>Fermented with naturally occurring wild yeast.</p>
+      </div>
+      <div class="subtype">
+        <h3>Baguette</h3>
+        <p>A long, thin French bread with a crispy crust.</p>
+      </div>
+      <div class="subtype">
+        <h3>Ciabatta</h3>
+        <p>An Italian bread known for its chewy texture and porous interior.</p>
+      </div>
+      <div class="subtype">
+        <h3>Focaccia</h3>
+        <p>An Italian flatbread often topped with herbs and olive oil.</p>
+      </div>
+      <div class="subtype">
+        <h3>Whole Wheat</h3>
+        <p>Made with whole wheat flour, offering a nuttier taste and more nutrients.</p>
+      </div>
+      <div class="subtype">
+        <h3>Brioche</h3>
+        <p>A rich, sweet bread enriched with butter and</p>
+      </div>
+      <div class="subtype">
+        <h3>Croissants</h3>
+        <p>Flaky and buttery French pastry, made by layering butter and dough, then folding and rolling
+          several times to create a delicate, crescent-shaped pastry.</p>
+      </div>
+      <div class="subtype">
+        <h3>Pita</h3>
+        <p>A round, pocketed flatbread, common in Middle Eastern cuisine.</p>
+      </div>
+
+    </div>
+    <div class="specialdetail" id="cheeseDisplay">
+      <svg id="closedialog2" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+        class="bi bi-x" viewBox="0 0 16 16">
+        <path
+          d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+      </svg>
+      <!-- Cheeses we have -->
+      <div class="subtype">
+        <h3>Baby Burrata</h3>
+        <p>A small, fresh Italian cheese made from mozzarella and cream. It has a soft, creamy center encased in a
+          delicate outer
+          shell.</p>
+      </div>
+      <div class="subtype">
+        <h3>Cherry Broccolini</h3>
+        <p>While "Cherry Broccolini" is not a standard cheese, if you meant a specific cheese related to cherry and
+          broccolini
+          flavors, it might be a unique or local variation.</p>
+      </div>
+      <div class="subtype">
+        <h3>Buffalo Mozzarella</h3>
+        <p>A soft, moist Italian cheese made from buffalo milk. It has a delicate, milky flavor and is often used in
+          salads or
+          paired with tomatoes.
+        </p>
+      </div>
+      <div class="subtype">
+        <h3>Cheddar</h3>
+        <p>A firm, smooth-textured cheese originating from England. Cheddar ranges from mild to sharp in flavor, with a
+          distinct
+          tanginess.
+        </p>
+      </div>
+      <div class="subtype">
+        <h3>Mozzarella</h3>
+        <p>A mild, white cheese known for its soft texture and excellent melting properties. It's often used in pizzas,
+          salads, and
+          Italian dishes.</p>
+      </div>
+      <div class="subtype">
+        <h3>Mascarpone</h3>
+        <p>An Italian cream cheese with a velvety texture. It's sweet and buttery, commonly used in desserts like
+          tiramisu.
+        </p>
+      </div>
+      <div class="subtype">
+        <h3>Parmesan</h3>
+        <p>A hard, aged Italian cheese with a granular texture and rich, savory flavor. Often grated and used to enhance
+          the taste
+          of various dishes.</p>
+      </div>
+      <div class="subtype">
+        <h3>Feta</h3>
+        <p>A crumbly Greek cheese made from sheep's or goat's milk. It has a tangy flavor and is often used in salads
+          and
+          Mediterranean cuisine.
+        </p>
+      </div>
+      <div class="subtype">
+        <h3>Ricotta</h3>
+        <p>An Italian whey cheese with a smooth, slightly grainy texture. It's versatile, used in both sweet and savory.
+        </p>
+      </div>
+
+    </div>
+  </section>
+  <!-- section end -->
+
+  <!-- HIGHLIGHT START -->
+  <section class="countdown background">
+    <div>
+      <h2 class="head1">Highlights</h2>
+      <div class="horizontal-line"></div>
+    </div>
+    <h2>Join our upcoming workshop</h2>
+    <div class="clock">
+      <div class="days">
+        <h5 class="countinfo">Days</h5>
+        <p id="dayText"></p>
+      </div>
+      <div class="hours">
+        <h5 class="countinfo">Hours</h5>
+        <p id="hourText"></p>
+      </div>
+      <div class="min">
+        <h5 class="countinfo">Minutes</h5>
+        <p id="minText"></p>
+      </div>
+      <div class="sec">
+        <h5 class="countinfo">Seconds</h5>
+        <p id="secText"></p>
+      </div>
+    </div>
+    <p id="cd"></p>
+  </section>
+
+  <!-- HIGHLIGHT END -->
+
+  <!-- section scroller start-->
+  <section class="speciality background">
+    <div>
+      <h2 class="head1">Reviews</h2>
+      <div class="horizontal-line"></div>
+    </div>
+    <div class="scroller">
+      <div class="scroller__inner">
+        <div class="specialCard">
+          <div class="card">
+            <img src="./files/reviews/rev (1).png" alt="PremiumCoffee" />
+          </div>
+        </div>
+        <div class="specialCard">
+          <div class="card">
+            <img src="./files/reviews/rev (2).png" alt="RoastingMachine" />
+          </div>
+        </div>
+        <div class="specialCard">
+          <div class="card">
+            <img src="./files/reviews/rev (3).png" alt="Cheeses" />
+          </div>
+        </div>
+        <div class="specialCard">
+          <div class="card">
+            <img src="./files/reviews/rev (4).png" alt="Bread" />
+          </div>
+        </div>
+        <div class="specialCard">
+          <div class="card">
+            <img src="./files/reviews/rev (5).png" alt="Projector" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- section end -->
+  <!-- FOOTER START -->
+  <footer>
+    <div class="about">
+      <img id="koelogo" src="./files/koe_data/koeLogo.png" alt="KOE Logo" />
+      <h4>KOE The Kafe</h4>
+      <div class="visit">
+        <p>Visit Us At:</p>
+        <p>
+          205, International Finance Center VIP Road, opp. Fire Station,
+          Vesu<br />
+          Surat, Gujarat 395007
+        </p>
+      </div>
+    </div>
+    <div class="footer-list">
+      <ul>
+        <li>About</li>
+        <li>
+          <p>Contact</p>
+          <a href="https://www.instagram.com/koethekafe/" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+            </svg>
+          </a>
+          <a href="https://maps.app.goo.gl/gAJoM4TgYcFCfqcq8" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+              <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <!-- FOOTER END -->
+  <script type="text/javascript" src="./script.js"></script>
+  <script type="text/javascript" src="./special.js"></script>
+</body>
+
+</html>
